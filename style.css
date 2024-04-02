@@ -1,0 +1,106 @@
+body {
+  background-color: skyblue;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background-color: skyblue;
+  color: rgb(22, 62, 187);
+  color: linear-gradient(
+    90deg,
+    rgba(22, 62, 187, 0.48783263305322133) 0%,
+    rgba(20, 13, 236, 1) 48%,
+    rgba(164, 160, 173, 0.38139005602240894) 100%
+  );
+  padding: 15px 0;
+  border-radius: 3px;
+  margin-left: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 30px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.nav-links li a:hover {
+  color: #cdb00a;
+}
+.btn1 {
+  border-radius: 6px;
+  height: 50px;
+  width: 100px;
+  margin-right: 100px;
+  margin-top: 400px;
+  color: white;
+  background-color: #cdb00a;
+  border: black;
+  cursor: pointer;
+}
+.btn1 a:hover {
+  background-color: blue;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.logo img {
+  border-radius: 50%; /* This will make the image circular */
+  width: 80px; /* Adjust the width and height according to your design */
+  height: 80px;
+  display: block; /* Ensures proper centering */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+/* Hide dropdown content by default */
+/* Hide dropdown content by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Style for arrow */
+.arrow {
+  margin-left: 5px;
+}
+
+/* Style for dropdown when it's open */
+.dropdown-content.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
